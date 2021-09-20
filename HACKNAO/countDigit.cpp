@@ -11,8 +11,11 @@ long countDigits(long n)
     }
     for (int i = 0; i < 10; i++)
     {
-        if (arr[i] > 0) //
+        if (arr[i] > 0)
+        {
             count++;
+            cout << arr[i] << " " << count << endl;
+        } //
     }
     return count;
 }
