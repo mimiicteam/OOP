@@ -1,27 +1,16 @@
 #include <iostream>
 
-void input(int arr[], int n)
+void myStrcpy(char destination[], char source[])
 {
-    for (int i = 0; i < n; ++i)
-    {
-        std::cin >> *(arr + i);
-    }
-}
-
-void output(int arr[], int n)
-{
-    for (int i = 0; i < n; ++i)
-    {
-        std::cout << *(arr + i) << " ";
-    }
-    std::cout << "\b";
+    char tmp = source[100];
+    destination == tmp;
 }
 
 int main()
 {
-    int arr[10], n;
-    std::cout << "Input n: ";
-    std::cin >> n;
-    input(arr, n);
-    output(arr, n);
+    char strA[100];
+    char strB[] = "HELLO DTU";
+    myStrcpy(strA, strB);
+    std::cout << "strA: " << strA << std::endl;
+    std::cout << "strB: " << strB << std::endl;
 }
